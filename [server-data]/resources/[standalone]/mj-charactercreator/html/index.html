@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="app" class="creator hidden" aria-hidden="true">
+        <aside class="panel panel-left">
+            <header class="brand">
+                <span class="eyebrow">MJ Customs</span>
+                <h1>Character Creator</h1>
+            </header>
+
+            <div class="segmented" role="group" aria-label="Gender">
+                <button id="genderMale" class="segment active" type="button" data-gender="male">Male</button>
+                <button id="genderFemale" class="segment" type="button" data-gender="female">Female</button>
+            </div>
+
+            <label class="field-label" for="searchInput">Search</label>
+            <input id="searchInput" class="search" type="search" placeholder="Find category">
+
+            <nav id="categoryTabs" class="tabs" aria-label="Categories"></nav>
+        </aside>
+
+        <section class="stage" aria-label="Preview">
+            <div id="statusToast" class="toast hidden"></div>
+            <div class="camera-hints">
+                <span id="activeViewLabel">Full Body</span>
+                <span id="scanLabel">Ready</span>
+            </div>
+        </section>
+
+        <aside class="panel panel-right">
+            <header class="section-head">
+                <span class="eyebrow">Selected</span>
+                <h2 id="selectedTitle">Tops</h2>
+            </header>
+
+            <label class="field-label" for="collectionSelect">Collection</label>
+            <select id="collectionSelect"></select>
+
+            <div class="control-row">
+                <label class="field-label" for="drawableRange">Drawable</label>
+                <input id="drawableNumber" class="number" type="number" min="0" value="0">
+            </div>
+            <input id="drawableRange" class="range" type="range" min="0" max="0" value="0">
+
+            <div class="control-row">
+                <label class="field-label" for="textureRange">Texture</label>
+                <input id="textureNumber" class="number" type="number" min="0" value="0">
+            </div>
+            <input id="textureRange" class="range" type="range" min="0" max="0" value="0">
+
+            <div class="grid-actions">
+                <button id="prevDrawable" type="button">Previous</button>
+                <button id="nextDrawable" type="button">Next</button>
+                <button id="randomizeCategory" type="button">Randomize</button>
+                <button id="resetCategory" type="button">Reset</button>
+            </div>
+        </aside>
+
+        <footer class="bottom-bar">
+            <button id="saveButton" class="primary" type="button">Save</button>
+            <button id="closeButton" class="danger" type="button">Close</button>
+            <button id="rotateLeft" type="button">Rotate Left</button>
+            <button id="rotateRight" type="button">Rotate Right</button>
+            <div id="cameraButtons" class="camera-buttons"></div>
+            <button id="zoomIn" type="button">Zoom In</button>
+            <button id="zoomOut" type="button">Zoom Out</button>
+        </footer>
+
+        <div id="loadingOverlay" class="loading hidden">
+            <div class="loader"></div>
+            <p>Scanning wardrobe</p>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

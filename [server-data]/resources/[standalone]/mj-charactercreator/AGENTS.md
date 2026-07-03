@@ -18,7 +18,7 @@ Do not add framework dependencies such as QBCore, Qbox, ESX, ox_lib, or database
 There is no package manager or build step expected for the base resource. Use direct FiveM testing:
 
 - `ensure mj-charactercreator` starts the resource using the deployed folder name.
-- `/creator`, `/charcreator`, or `/cc` opens the creator in-game.
+- `/creator` opens the creator in-game.
 - `/creator male`, `/creator female`, and `/creator close` test command arguments.
 
 For quick syntax checks, use a local Lua parser if available, then validate behavior in a FiveM test server.
