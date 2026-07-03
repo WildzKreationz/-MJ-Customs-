@@ -59,4 +59,6 @@ or
 
 Your **MJ Customs** server should now start through txAdmin.
 
-> **Important:** Do not share your server key with anyone.
+Add Clothing Packs inside [clothing] restart server after each pack install 
+
+> **Important:** Do not share your server key with anyone. 
