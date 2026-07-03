@@ -1,9 +1,0 @@
-{
-  "version": 2,
-  "general": {
-    "serverName": "MJ Customs"
-  },
-  "server": {
-    "dataPath": "D:/[DEVELOPMENT]/[MJ-Customs]/[server-data]/"
-  }
-}
